@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta http-euiv="X-UA_Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kirirom Institute of Technology</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<section id="home">
+<div class="banner">
+  <div class="navbar">
+    <img src="logo.jpg" class="logo">
+      <a class="nav-link nav-link-ltr" href="Home">Home</a>
+      <a class="nav-link nav-link-ltr" href="Internship">Internship</a>
+      <a class="nav-link nav-link-ltr" href="Acadamic">Acadamic</a>
+      <a class="nav-link nav-link-ltr" href="Register">Register</a>
+      <a class="nav-link nav-link-ltr" href="About">About Us</a>
+  </div>
+  <div class="content">
+    <h1>WELCOME</h1><br>
+    <p>Suffer Suffer Suffer</p><br>
+    <div>
+      <button type="button"><span></span>Register</button>
+      <button type="button"><span></span>Apply for scholarship</button>
+    </div>
+  </div>
+<div>
+  <section id="internship">
+    <div class="section-heading">
+      <h2>Internship</h2>
+    </div>
+    <div class="section-content">
+      <p>If you are interested in gaining practical experience, our internship programs provide valuable opportunities to enhance your skills and knowledge.</p>
+      <p>Explore the world of technology and innovation through our internship offerings.</p>
+      <button type="button"><span></span>Learn More</button>
+    </div>
+  </section>
+ </div> 
+</div>
+</section>
+<section id="Register">
+<div class="container">
+  <h1 style="font-family: Montserrat, sans-serif"><span style="color: #b4312d;"></span> Student Enrollment</h1>
+  <form id="studentForm">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="age">Age:</label>
+    <input type="number" id="age" name="age" required>
+
+    <label for="gender">Gender:</label>
+    <select id="gender" name="gender" required>
+      <option value="Male">Male</option>
+      <option value="Female">Female</option>
+      <option value="Other">Other</option>
+    </select>
+
+    <label for="program">Program:</label>
+    <select id="program" name="program" required>
+      <option value="Software Engineering">Software Engineering</option>
+      <option value="Tourist Management">Tourist Management</option>
+    </select>
+
+    <label for="specialRequirements">Special Requirements:</label>
+    <input type="text" id="specialRequirements" name="specialRequirements" placeholder="e.g., Dietary restrictions, special accommodations">
+
+    <label for="academicHistory">Academic History:</label>
+    <textarea id="academicHistory" name="academicHistory" rows="4" placeholder="Enter your academic achievements and relevant information" required></textarea>
+
+    <button type="button" onclick="submitForm()">Submit</button>
+  </form>
+
+  <div id="enrollmentConfirmation" class="hidden">
+    <h2>Enrollment Confirmation</h2>
+    <p><strong>Name:</strong> <span id="confirmationName"></span></p>
+    <p><strong>Age:</strong> <span id="confirmationAge"></span></p>
+    <p><strong>Gender:</strong> <span id="confirmationGender"></span></p>
+    <p><strong>Program:</strong> <span id="confirmationProgram"></span></p>
+    <p><strong>Special Requirements:</strong> <span id="confirmationSpecialRequirements"></span></p>
+    <p><strong>Academic History:</strong> <span id="confirmationAcademicHistory"></span></p>
+  </div>
+</div>
+</section>
+<script src="script.js"></script>
+</body>
+</html>
